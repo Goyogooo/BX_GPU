@@ -1,0 +1,20 @@
+﻿  Compiling CUDA source file main.cu...
+  
+  D:\MyVS\BX_GPU\BX_GPU>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o D:\MyVS\BX_GPU\BX_GPU\x64\Debug\main.cu.obj "D:\MyVS\BX_GPU\BX_GPU\main.cu" 
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include\cub/warp/specializations/warp_exchange_shfl.cuh(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include\cuda.h(22256): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include\cuda.h(22946): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include\cub/warp/specializations/warp_exchange_shfl.cuh(1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include\cuda.h(22256): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include\cuda.h(22946): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include\thrust/detail/allocator/allocator_traits.inl(378): warning #20011-D: calling a __host__ function("std::_Iterator_base12::_Iterator_base12(const ::std::_Iterator_base12&)") from a __host__ __device__ function("std::_Iterator_base12::_Iterator_base12 [subobject]") is not allowed
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include\thrust/detail/allocator/allocator_traits.inl(378): warning #20011-D: calling a __host__ function("std::_Iterator_base12::~_Iterator_base12()") from a __host__ __device__ function("std::_Iterator_base12::~_Iterator_base12 [subobject]") is not allowed
+  
+  main.cu
+  tmpxft_00003a64_00000000-7_main.cudafe1.cpp
+D:\MyVS\BX_GPU\BX_GPU\main.cu(52): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\MyVS\BX_GPU\BX_GPU\main.cu(53): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  BX_GPU.vcxproj -> D:\MyVS\BX_GPU\x64\Debug\BX_GPU.exe
