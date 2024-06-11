@@ -14,7 +14,7 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include\thrust/detail/a
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include\thrust/detail/allocator/allocator_traits.inl(378): warning #20011-D: calling a __host__ function("std::_Iterator_base12::~_Iterator_base12()") from a __host__ __device__ function("std::_Iterator_base12::~_Iterator_base12 [subobject]") is not allowed
   
   main.cu
-  tmpxft_00003a64_00000000-7_main.cudafe1.cpp
+  tmpxft_00005648_00000000-7_main.cudafe1.cpp
 D:\MyVS\BX_GPU\BX_GPU\main.cu(52): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
 D:\MyVS\BX_GPU\BX_GPU\main.cu(53): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   BX_GPU.vcxproj -> D:\MyVS\BX_GPU\x64\Debug\BX_GPU.exe

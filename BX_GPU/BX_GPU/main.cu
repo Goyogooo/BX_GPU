@@ -96,7 +96,7 @@ std::vector<uint32_t> read_array(std::ifstream& stream) {
 }
 
 int main() {
-    std::ifstream file("D:/MyVS/ExpIndex", std::ios::binary);
+   /* std::ifstream file("D:/MyVS/ExpIndex", std::ios::binary);
     if (!file) {
         std::cout << "无法打开索引文件" << std::endl;
         return 1;
@@ -105,7 +105,18 @@ int main() {
     file.seekg(32832, std::ios::beg);  
     vector<uint32_t> array1 = read_array(file);
     vector<uint32_t> array2 = read_array(file);
+    file.close();*/
+    std::ifstream file("D:/MyVS/ExpIndex", std::ios::binary);
+    if (!file) {
+        std::cerr << "无法打开文件" << std::endl;
+        return 1;
+    }
+    file.seekg(32832, std::ios::beg);
+    vector<uint32_t> array1 = read_array(file);
+    file.seekg(1733008, std::ios::beg);
+    vector<uint32_t> array2 = read_array(file);
     file.close();
+
     thrust::device_vector<uint32_t> d_array1 = array1;
     thrust::device_vector<uint32_t> d_array2 = array2;
 
@@ -115,8 +126,8 @@ int main() {
     std::vector<uint32_t> result = my_set_intersection(array1, array2);
 
     auto time = std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::high_resolution_clock::now() - start).count();
-    /*
-    std::ofstream f3("D:/MyVS/BX_GPU/result.txt", std::ios::app);
+    
+    std::ofstream f3("D:/MyVS/BX_GPU/result2.txt", std::ios::app);
     if (!f3.is_open()) {
         std::cerr << "无法打开文件" << std::endl;
         return 0;
@@ -128,8 +139,8 @@ int main() {
         i++;
     }
     }
-    f3.close();*/
+    f3.close();
    
-    std::cout << "运行时间" << time << "毫秒" << endl;
+    std::cout << "运行时间" << time << "微秒" << " ,size:"<<i<<endl;
    
 }
