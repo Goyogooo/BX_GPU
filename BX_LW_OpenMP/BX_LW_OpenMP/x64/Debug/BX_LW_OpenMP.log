@@ -1,0 +1,3 @@
+﻿  test.cpp
+D:\MyVS\BX_LW_OpenMP\BX_LW_OpenMP\test.cpp(77,28): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  BX_LW_OpenMP.vcxproj -> D:\MyVS\BX_LW_OpenMP\x64\Debug\BX_LW_OpenMP.exe
